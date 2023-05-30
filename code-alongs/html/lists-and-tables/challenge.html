@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makings changes through a pull request</title>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+     
+      }
+      td, th {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Table</h2>
+    
+      <!-- table tag will come with some default styling -->
+      <table>
+        <!-- thead represents the head or first row of the table -->
+        <thead>
+          <!-- tr tag represents a single row in a table, we can use the first one to define the layout -->
+          <tr>
+            <th>Programming Language</th>
+            <th>Logo</th>
+            
+          </tr>
+        </thead>
+        <!-- tbody is the actual data -->
+        <tbody>
+          <tr>
+            <td>Linux</td>
+            <td><i class="icon-linux"></i>icon-linux</td>
+            
+          </tr>
+          <tr>
+            <td>github-sign</td>
+            <td><i class="icon-github-sign"></i>icon-github-sign</td>
+          </tr>
+          <tr>
+            <td>apple logo</td>
+            <td><i class="icon-apple"></i>icon-apple</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Changes to a repo through pull request</h2>
+      
+      <h3>All the steps</h3>
+      <ol>
+        <li>On the pull request, click Files changed.</li>
+        <li>Above the changed code, click Review changes.</li>
+        <li>Type a comment summarizing your feedback on the proposed changes.</li>
+        <li>Select they type of review you would like to leave.</li>
+        <li>Click Submit Review.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>General advice</h2>
+      
+      <h3>Git Steps</h3>
+      <ul>
+        <li>git init</li>
+        <li>git add .</li>
+        <li>git commit -m {meaningful message}</li>
+        <li>git push origin main</li>
+      </ul>
+    </section>
+  </body>
+</html>

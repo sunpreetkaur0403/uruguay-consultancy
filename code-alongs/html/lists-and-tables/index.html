@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables and Lists</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px sliid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Table</h2>
+      <h3>People</h3>
+      <!-- table tag will come with some default styling -->
+      <table>
+        <!-- thead represents the head or first row of the table -->
+        <thead>
+          <!-- tr tag represents a single row in a table, we can use the first one to define the layout -->
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <!-- tbody is the actual data -->
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>Adams</td>
+            <td>Adelaide</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Burns</td>
+            <td>Brisbane</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Unordered Lists</h2>
+      <!-- ul = unordered list. By default appear as dot points-->
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Hiking</li>
+        <li>Cooking</li>
+        <li>Video Games</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ordered Lists</h2>
+      <!-- li = ordered list. By default will be numeric-->
+      <h3>Git Steps</h3>
+      <ol>
+        <li>git init</li>
+        <li>git add .</li>
+        <li>git commit -m {meaningful message}</li>
+        <li>git push origin main</li>
+      </ol>
+    </section>
+  </body>
+</html>
