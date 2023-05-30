@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>Register form</h2>
+    <form action="">
+      <div>
+        <label for="usernameInput">Username</label>
+        <input
+          name="username"
+          id="usernameInput"
+          type="text"
+          placeholder="Username"
+          required
+        />
+      </div>
+      <div>
+        <label for="emailInput">Email</label>
+        <input name="email" id="emailInput" type="email" required />
+      </div>
+      <div>
+        <label for="roleInput">Role</label>
+        <select id="roleInput" name="role">
+          <option>Buyer</option>
+          <option>Seller</option>
+        </select>
+      </div>
+      <div>
+        <label for="passwordInput">Password</label>
+        <input name="password" id="passwordInput" type="password" required />
+      </div>
+      <div>
+        <label for="passwordConfirmation">Password Confirmation</label>
+        <input
+          name="passwordConfirmation"
+          id="passwordConfirmation"
+          type="password"
+          required
+        />
+      </div>
+      <!-- <input type="submit" value="Register" /> -->
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
