@@ -1,0 +1,29 @@
+/* 0100 */
+#greenPara {
+  color: green;
+}
+/* 0010 */
+.red-para {
+  color: red;
+}
+
+/* 0001 */
+p {
+  color: blueviolet;
+  font-size: 45px;
+}
+
+/* 0111 */
+#wrapper div.container {
+  background-color: coral;
+}
+
+/* 0011 */
+div.container {
+  background-color: aquamarine;
+}
+
+/* 0010 */
+.container {
+  background-color: yellow;
+}
