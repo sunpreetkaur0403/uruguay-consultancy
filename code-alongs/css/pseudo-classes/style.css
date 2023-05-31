@@ -1,0 +1,74 @@
+a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+a:link{
+  color: darkcyan;
+}
+
+/* visited link */
+a:visited{
+  color: crimson ;
+}
+
+/* mouse over link */
+a:hover{
+  color: darksalmon;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  border: 3px solid blueviolet;
+  padding: 4px 8px;
+}
+
+button:hover{
+  background-color: white;
+  color: blueviolet;
+
+}
+
+div > p:first-of-type{
+  color: cornflowerblue;
+}
+
+div > p:last-of-type{
+  color: chartreuse;
+}
+
+div > p:nth-of-type(2){
+  color: brown;
+}
+
+div > p:nth-last-of-type(2){
+  color: darkblue;
+}
+
+input{
+  background-color: aquamarine;
+}
+
+input:disabled{
+  border: 1px solid lightseagreen;
+}
+
+input:enabled{
+  background-color: blanchedalmond;
+}
+
+input:required{
+  border: 2px solid orange;
+}
+
+input:optional{
+  background-color: aliceblue;
+}
+
