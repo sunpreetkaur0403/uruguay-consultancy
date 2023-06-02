@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+}
+nav a {
+  margin-right: 1.25em;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  width: 80%;
+}
+section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

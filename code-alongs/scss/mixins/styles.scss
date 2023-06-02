@@ -1,0 +1,20 @@
+@use 'mixins';
+
+nav {
+  @include mixins.flex(flex-start);
+  @include mixins.black-border;
+  a {
+    margin-right: 1.25em;
+  }
+  width: 50%;
+}
+
+section {
+  @include mixins.flex(space-around);
+  @include mixins.black-border;
+  width: 80%;
+  div {
+    @include mixins.flex;
+    @include mixins.black-border;
+  }
+}

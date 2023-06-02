@@ -1,0 +1,21 @@
+@mixin btn-border($color: red, $style: dotted) {
+  border: 3px $color $style;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 500px;
+  margin: 20px;
+  background-color: #eceff3;
+  @include btn-border($style: solid);
+  &--chip {
+    background-color: white;
+    @include btn-border(blue, solid);
+  }
+  &--pill {
+    background-color: white;
+    @include btn-border(blue, dashed);
+  }
+}
