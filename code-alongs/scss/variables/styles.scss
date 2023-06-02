@@ -1,0 +1,51 @@
+$primary: #febb3f;
+$secondary: #ce17ce;
+$padding-small: 5px;
+$padding-large: 10px;
+
+.btn{
+  $primary:#00a6ff;
+  $secondary: #4d16d9;
+  $success : #0dd80d;
+  $danger:#f60a0a;
+  display: inline-block;
+  cursor: pointer;
+  padding: $padding-small;
+  color: #fff;
+  background-color:$primary;
+  &--secondary {
+    background-color: $secondary;
+  }
+  &--danger{
+    padding: $padding-large;
+    background-color: $danger;
+  }
+
+  &__text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  
+    &--bold{
+      font-weight: bold;
+    }
+
+    &--italic{
+      font-style: italic;
+    }
+  }
+}
+
+.heading{
+  &--primary{
+    color: $primary
+  }
+  &--secondary{
+    color: $secondary;
+  }
+}
+
+$primary: pink;
+
+p{
+  color:$primary
+}

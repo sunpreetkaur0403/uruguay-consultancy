@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  background-color: #00a6ff;
+}
+.btn--secondary {
+  background-color: #4d16d9;
+}
+.btn--danger {
+  padding: 10px;
+  background-color: #f60a0a;
+}
+.btn__text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+.btn__text--bold {
+  font-weight: bold;
+}
+.btn__text--italic {
+  font-style: italic;
+}
+
+.heading--primary {
+  color: #febb3f;
+}
+.heading--secondary {
+  color: #ce17ce;
+}
+
+p {
+  color: pink;
+}
+
+/*# sourceMappingURL=style.css.map */
