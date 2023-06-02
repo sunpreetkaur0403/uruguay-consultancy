@@ -1,0 +1,11 @@
+@use '../theme/theme' as theme;
+
+.header{
+  font-family: 'Times New Roman', Times, serif;
+  &__main-heading{
+    color: theme.$brand-purple;
+  }
+}
+span{
+  color: blue;
+}

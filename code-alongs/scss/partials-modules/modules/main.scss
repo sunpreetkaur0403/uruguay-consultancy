@@ -1,0 +1,14 @@
+@use '../theme/theme' as theme;
+
+.content{
+  font-weight: theme.$default-font-weight;
+  &__subheading{
+    color:theme.$brand-pink;
+  }
+  &__text{
+    text-align: center;
+  }
+}
+span{
+  color: green($color: #000000);
+}
