@@ -1,0 +1,26 @@
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  background-color: blue;
+  &--secondary {
+    background-color: lightblue;
+  }
+  &--danger{
+    background-color: red;
+  }
+
+  &__txt{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  
+    &--bold{
+      font-weight: bold;
+    }
+
+    &--italic{
+      font-style: italic;
+    }
+  }
+}
