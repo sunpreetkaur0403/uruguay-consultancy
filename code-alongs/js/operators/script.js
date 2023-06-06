@@ -67,9 +67,21 @@ console.log(value--);
 console.log(value);
 
 // working with strings
-let myName = "Martyna";
+let myName = "Sunpreet";
 
 console.log("hi, " + myName);
 
 const fullSentence = `Hello, my name is ${myName}`;
 console.log(fullSentence);
+
+let num = 1.5;
+
+console.log(Math.round(num));
+
+console.log(Math.floor(num));
+
+console.log(Math.ceil(num));
+
+let num2 = 1.2345678;
+
+console.log(typeof num2.toFixed(2));
