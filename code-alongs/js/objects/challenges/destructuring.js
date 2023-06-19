@@ -12,23 +12,19 @@ const movie = {
 
 // @returns 'The genres of the movie title are genre1, genre2'
 
-const{title, yearReleased, director, genre} = movie;
 
-const getTitleAndGenre = (movie) => { 
-  return `The genres of the movie title are ${movie.genre}`;
+
+const getTitleAndGenre = (obj) => { 
+  const{title, genre} = obj;
+  let genreList = genre.join(', ');
+  return `The genres of the movie title are ${genreList}`;
 };
 
 
 // checking if returned the right value
 console.log(getTitleAndGenre(movie));
 
-// const getTitleAndGenre = (obj) => {
 
-//   const { title, genre } = obj;
-//   let genreList = genre.join(', ');
-
-//   return `The genres of ${title} are ${genreList}`;
-// };
 
 // 2
 const recipe = {
@@ -68,13 +64,20 @@ const renameKey = (obj) => {
 
 console.log(renameKey(recipe));
 
-// const renameKey = (obj, keyToRename, newKey) => {
+
+
+// const renameKey = (obj, keyToRename = "", newKey = "") => {
 //   const { [keyToRename]: value, ...rest } = obj; //use computed property name to pass value instead of defining new key "keyToRename"
 //   const newObj = { [newKey]: value, ...rest };
 //   return newObj;
+
+//   const { mealIngredients: value, ...rest } = obj;
+//   return { ingredients: value, ...rest };
 // };
 
+// console.log(renameKey(recipe));
 // console.log(renameKey(recipe, "mealIngredients", "ingredients"));
+
 
 // 3
 
@@ -106,6 +109,40 @@ const returnFirstCity = (obj) => {
 
 console.log(returnFirstCity(codingSchool));
 
+// const returnFirstCity = (obj) => {
+//     const { offices } = obj;
+//     return offices[0].city;
+// };
+
+// const returnFirstCity = (obj) => {
+//   const { offices, ...rest } = obj;
+//   const [first, ...restOfArray] = offices;
+//   console.log(first, "first element of the array pf ofccies");
+//   console.log(restOfArray, "rest of array");
+//   const { city, ...rest2 } = first;
+
+//   const {
+//       offices: [firstOffice, ...restOfOff],
+//   } = obj;
+
+//   console.log(firstOffice, "first office");
+
+//   return city;
+// };
+// const arr = [1, 2, 3];
+// const [banana, second, ...rest] = arr;
+// console.log(second);
+// console.log(banana);
+// console.log([banana, ...rest]);
+
+// const ob = {
+//   key1: "val1",
+//   key2: "val2",
+// };
+// const { key3 } = ob;
+// console.log(key3, "key 3");
+// console.log(returnFirstCity(codingSchool));
+
 // 4
 
 const postsArray = [
@@ -133,10 +170,28 @@ const postsArray = [
 // @returns {{postId: number, creator: number, postComment: number}[]}
 
 
-const newPostArr = (arr).map((postsArray)=> {postsArray.id });
+const newPostArr = (arr) => {
+  return arr.map((obj) => {
+      const { id: postId, createdBy, commentNo } = obj;
+      // with id, I renamed the property when I destructured my objects
+      // I have a variable called postId
+      console.log(postId);
+      // here we grabbed the createdBy property and have a variable called createdBy
+      console.log(createdBy);
+      // we don't want our key to be called createBy
+      // we add a new key called creator and we assign the value stored in var createdBy
+      return { postId, creator: createdBy, postComment: commentNo };
+  });
+};
 
+const name = "Martyna";
+const person = {
+  firstName: name,
+};
+console.log(person);
 
 console.log(newPostArr(postsArray));
+
 
 // 5
 const forecast = {
@@ -150,6 +205,15 @@ const forecast = {
 // @param { yesterday: { low: number, high: number }, today: { low: number, high: number }, tomorrow: { low: number, high: number } }
 
 // return {number} the value of the low temperature for today
-const getTodayLow = (obj) => {};
+const getTodayLow = (obj) => {
+  const { today } = obj;
+  console.log(today, "today");
+  const { low, ...todayRest } = today;
+
+  const {
+      today: { low: otherLow },
+  } = obj;
+  return `${low} the value of the low temperature for today`;
+};
 
 console.log(getTodayLow(forecast));
