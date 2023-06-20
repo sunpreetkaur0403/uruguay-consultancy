@@ -1,7 +1,7 @@
 import { rectPerim, rectangleArea } from "./rectange.js";
 import createEl, { changeColour } from "./dom-utils.js";
 
-// WHat are modules?'
+// What are modules?
 // reusable piece of code
 
 // Why do we want to use them?
