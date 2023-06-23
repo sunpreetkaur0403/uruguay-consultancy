@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./reactangleArea.js"></script>
+        <title>Unit Testing</title>
+    </head>
+    <body>
+        <!-- 1. What is unit testing? -->
+        <!-- unit testing - we are a small, isolated piece of our code, usually a function -->
+        <!-- Jest - a js testing library -->
+
+        <!-- 2. Why do we test our code? -->
+        <!-- Make sure that it works! Check if there are any bugs, we want to check, that it works as intended -->
+        <!--  we want to test functions with different inputs -->
+        <!-- Verify the correctness of our code and detect bugs early -->
+        <!-- Tests are something we do in the development faze -->
+        <!--  Makes our code easier to maintain and refactor -->
+        <!-- good tests work as documentation -->
+
+        <!-- 3. What is TDD? -->
+        <!-- Test Driven Development -->
+        <!--  -->
+
+        <!-- 4. What are the advantages of TDD? -->
+        <!-- Early bug detection -->
+        <!-- Code documentation -->
+        <!--  Makes it easier for teams to collaborate -->
+        <!-- Forces us to think of every possible scenario -->
+        <!-- Less bias -->
+        <!-- Forces us to write better, cleaner, more modular -->
+        <!-- We are forced to wite function with less responsibility, that do one thing at a time -->
+
+        <!-- 5. How to set up tests? -->
+        <!-- I. Install Jest:  npm install --save-dev jest -->
+
+        <!-- II. Add a script to package.json -->
+
+        <!-- {
+                "scripts": {
+                    "test": "jest"
+                }
+            } -->
+
+        <!-- III. Install babel: npm install --save-dev babel-jest @babel/core @babel/preset-env -->
+        <!-- tests run in node -->
+        <!-- node uses exports like this:
+            module.export = { something }
+            const myModule = require("./file")
+            myModule.something
+         -->
+        <!--  export const something = () => {} -->
+        <!-- import {something} from "./file.js" -->
+        <!-- IV. Create a babel.config.js file -->
+        <!-- Add the following content to it:
+            module.exports = {
+                presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+            };
+        -->
+    </body>
+</html>
