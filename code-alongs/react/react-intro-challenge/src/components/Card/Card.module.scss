@@ -1,0 +1,45 @@
+.card {
+  border: 1px solid gray;
+  width: 350px;
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 20px;
+}
+
+.image{
+  width: 350px;
+  height: 200px;
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+.subtitle {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+}
+
+.para {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  color: black;
+  border-color: black;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+}
